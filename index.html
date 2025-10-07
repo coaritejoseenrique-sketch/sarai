@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flor para Sarai</title>
+    <link rel="stylesheet" href="css\css.css">
+</head>
+
+<body>
+    <div class="flor">
+        <div class="petalo"></div>
+        <div class="petalo"></div>
+        <div class="petalo"></div>
+        <div class="petalo"></div>
+        <div class="petalo"></div>
+        <div class="petalo"></div>
+        <div class="centro"></div>
+        <div class="tallo"></div>
+        <div class="hoja izquierda"></div>
+        <div class="hoja derecha"></div>
+    </div>
+
+    <h2>Para ti, Sarai 💐</h2>
+    <audio src="Morat - Al Aire (Letra)(MP3_160K).mp3" autoplay loop></audio>
+    <button id="botonMusica">🎶 Reproducir</button>
+
+    <script>
+        const audio = document.getElementById("musica");
+        const boton = document.getElementById("botonMusica");
+
+        boton.addEventListener("click", () => {
+            if (audio.paused) {
+                audio.play();
+                boton.textContent = "⏸️ Pausar";
+            } else {
+                audio.pause();
+                boton.textContent = "🎶 Reproducir";
+            }
+        });
+    </script>
+    <p>Como esta flor que al sol sonríe,<br>
+        así mi corazón por ti florece.<br>
+        Eres mi calma, mi alegría,<br>
+        la razón por la que todo merece. 💖</p>
+</body>
+
+</html>
